@@ -1,0 +1,184 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* PrimeReact DataTable borders */
+.p-datatable .p-datatable-table {
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  overflow: hidden; /* This clips the inner content to the rounded corners */
+}
+
+/* Round the first and last cells in each row */
+.p-datatable .p-datatable-thead > tr > th:first-child {
+  border-top-left-radius: 12px;
+}
+
+.p-datatable .p-datatable-thead > tr > th:last-child {
+  border-top-right-radius: 12px;
+}
+
+.p-datatable .p-datatable-tbody > tr:last-child > td:first-child {
+  border-bottom-left-radius: 12px;
+}
+
+.p-datatable .p-datatable-tbody > tr:last-child > td:last-child {
+  border-bottom-right-radius: 12px;
+}
+
+.p-datatable .p-selection-column .p-column-header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.p-datatable .p-selection-column .p-column-header-content::after {
+  content: "\e930"; 
+  font-family: "PrimeIcons";
+  font-size: 15px;
+  color: #999;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  pointer-events: auto;
+}
+
+.p-datatable .p-selection-column .p-column-header-content::after:hover {
+  color: #666;
+}
+
+/* Make the entire header clickable to trigger overlay */
+.p-datatable .p-selection-column .p-column-header-content {
+  cursor: pointer;
+}
+
+/* OverlayPanel positioning */
+.p-overlaypanel {
+  z-index: 1000;
+}
+
+.p-overlaypanel .p-overlaypanel-content {
+  padding: 0;
+}
+
+/* Decrease cell height */
+.p-datatable .p-datatable-thead > tr > th {
+  padding: 8px 12px; /* top/bottom, left/right */
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  padding: 6px 12px; /* top/bottom, left/right */
+}
+
+/* Custom styles extracted from inline styles */
+.app-container {
+  width: 75vw;
+  padding: 20px;
+}
+
+.app-header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.loading-container {
+  width: 75vw;
+  padding: 20px;
+  text-align: center;
+}
+
+.error-container {
+  width: 75vw;
+  padding: 20px;
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+}
+
+.controls-container {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.overlay-content {
+  padding: 15px;
+}
+
+.overlay-title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.overlay-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.overlay-input {
+  width: 100%;
+  font-size: 12px;
+}
+
+.overlay-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.overlay-button {
+  font-size: 11px;
+  padding: 4px 8px;
+  background-color: gray;
+}
+
+
